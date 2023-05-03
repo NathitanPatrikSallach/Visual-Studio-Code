@@ -1,7 +1,8 @@
-#ifdef PUNKT_H_
+#ifndef PUNKT_H_
 #define PUNKT_H_
-
 #include <string>
+
+using namespace std;
 
 class Punkt{
     private:
@@ -11,7 +12,7 @@ class Punkt{
         Punkt(int x, int y);
         int getX() const;
         int getY() const;
-        string print() const;
         void move(int x, int y);
+        string print() const;
 };
 #endif
